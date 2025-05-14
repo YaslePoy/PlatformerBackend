@@ -8,5 +8,6 @@ namespace PlatformerBackend.Api
     public interface IChatHub : IShared
     {
         Task<IChat> GetChat(string id);
+        Task<string> Raiting();
     }
 }
