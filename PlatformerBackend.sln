@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlatformerBackend", "PlatformerBackend\PlatformerBackend.csproj", "{D10E9F98-2096-40A3-8E7E-100933F81124}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Platf.Shared", "Platf.Shared\Platf.Shared.csproj", "{FFDE8C08-3076-4718-B39C-67926895EED3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D10E9F98-2096-40A3-8E7E-100933F81124}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D10E9F98-2096-40A3-8E7E-100933F81124}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D10E9F98-2096-40A3-8E7E-100933F81124}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D10E9F98-2096-40A3-8E7E-100933F81124}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFDE8C08-3076-4718-B39C-67926895EED3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFDE8C08-3076-4718-B39C-67926895EED3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFDE8C08-3076-4718-B39C-67926895EED3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFDE8C08-3076-4718-B39C-67926895EED3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

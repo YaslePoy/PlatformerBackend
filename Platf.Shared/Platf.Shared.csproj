@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <Nullable>enable</Nullable>
+        <LangVersion>9</LangVersion>
+
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="mROA" Version="2.0.0"/>
+        <PackageReference Include="mROA.Cbor" Version="2.0.0"/>
+        <PackageReference Include="mROA.Codegen" Version="2.0.1"/>
+    </ItemGroup>
+</Project>
