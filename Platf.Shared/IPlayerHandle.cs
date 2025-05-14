@@ -9,6 +9,6 @@ namespace PlatformerBackend.Api
     public interface IPlayerHandle : IShared
     {
         Task SetScore(int value, CancellationToken token = default);
-        Task SetStars(int value, CancellationToken token = default);
+        Task SetProgress(int[] value);
     }
 }

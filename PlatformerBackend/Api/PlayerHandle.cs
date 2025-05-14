@@ -1,4 +1,6 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
+using System.Text.Json;
 using System.Threading;
 using System.Threading.Tasks;
 using PlatformerBackend.Models;
@@ -24,10 +26,11 @@ namespace PlatformerBackend.Api
             await _context.SaveChangesAsync();
         }
 
-        public async Task SetStars(int value, CancellationToken token = default)
+        public async Task SetProgress(int[] value)
         {
+            Console.WriteLine(value);
             var user = _context.Players.FirstOrDefault(i => i.Id == Id);
-            user.Stars = value;
+            user.Progress = JsonSerializer.Serialize(value.Select(Convert.ToInt32));
             _context.Players.Update(user);
             await _context.SaveChangesAsync();
         }

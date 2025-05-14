@@ -9,7 +9,8 @@ namespace PlatformerBackend.Api
     {
         public async Task Post(IPlayerHandle user, string message)
         {
-            var sender = PlatformerContext.Instance.Players.FirstOrDefault(i => i.Id == (user as PlayerHandle).Id).Name;
+            var id = (user as PlayerHandle).Id;
+            var sender = PlatformerContext.Instance.Players.FirstOrDefault(i => i.Id == id).Name;
             OnMessage(sender, message);
         }
 
